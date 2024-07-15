@@ -7,6 +7,8 @@ const App = () => {
     const [selectedDate, setSelectedDate] = useState(null);
     const [eventName, setEventName] = useState("");
     const [events, setEvents] = useState([]);
+    const [password, setPassword] = useState("");
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     const Date_Click_Fun = (date) => {
         setSelectedDate(date);
@@ -16,7 +18,24 @@ const App = () => {
         setEventName(event.target.value);
     };
 
+    const Password_Update = (event) => {
+        setPassword(event.target.value);
+    };
+
+    const Authenticate = () => {
+        if (password === "123456") {
+            setIsAuthenticated(true);
+        } else {
+            alert("Incorrect password");
+        }
+    };
+
     const Create_Event_Fun = () => {
+        if (!isAuthenticated) {
+            alert("You are not authorized to add events.");
+            return;
+        }
+
         // Check if there's already an event for the selected date
         const isEventExists = events.some(
             (event) => event.date.toDateString() === selectedDate.toDateString()
@@ -72,6 +91,15 @@ const App = () => {
                                 : ""
                         }
                     />
+                    <div className="auth-container">
+                        <input
+                            type="password"
+                            placeholder="Enter password"
+                            value={password}
+                            onChange={Password_Update}
+                        />
+                        <button onClick={Authenticate}>Submit</button>
+                    </div>
                 </div>
                 <div className="event-container">
                     {selectedDate && (
