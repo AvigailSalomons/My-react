@@ -60,6 +60,6 @@
     "html-loader": "^5.0.0"
   },
   "exports": {
-    "./swiper-bundle.min.css": "./node_modules/swiper/swiper-bundle.min.css"
+    "./swiper-bundle.min.css": "./dist/css/swiper-bundle.min.css"
   }
 }
