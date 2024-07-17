@@ -6,6 +6,7 @@ import NavBar from './navbar';
 import Gallery from './gallrey';
 import Images from './SuiteInfinity';
 import SuiteInfinity from './SuiteInfinity';
+import Email, { ContactUs } from './ContactUs';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
  <Gallery/> 
  <Images/>  */}
 <Calender/>
+<ContactUs/>
 </div>
   );
 }
