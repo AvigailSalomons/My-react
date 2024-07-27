@@ -68,7 +68,15 @@ h1 {
 	max-width: 500px;
 	margin-right: 2rem;
 }
-
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
 .event-container {
 	flex: 1;
 	max-width: 500px;
@@ -348,3 +356,20 @@ h1 {
 	background-color: #ff4081;
 	color: white;
 }
+
+#footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	gap: 20px;
+	background-color: #f9f9f9;
+	padding: 70px;
+
+  }
+.footer-item {
+    flex: 1; /* מבטיח שכל פריט יתפוס מקום שווה */
+    max-width: 50%; /* מבטיח שכל קומפוננטה לא תתפוס יותר מ-50% מהרוחב */
+    box-sizing: border-box; /* מבטיח שרוחב הקומפוננטה כולל את ה-padding וה-border */
+}
+
+

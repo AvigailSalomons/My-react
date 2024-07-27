@@ -1,38 +1,36 @@
-// import React from 'react';
-// import 'owl.carousel/dist/assets/owl.carousel.css';
-// import 'owl.carousel/dist/assets/owl.theme.default.css';
-// import OwlCarousel from 'react-owl-carousel';
-// import 'owl.carousel';
+import React from 'react';
+import { MDBCarousel, MDBCarouselItem, MDBCarouselCaption } from 'mdb-react-ui-kit';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import'./styles.scss';
+import'./images.css';
 
-// class Images extends React.Component {
-//     render() {
-//         return (
-//             <div className="content">
-//                 <h2 className="title">סוויטת אינפיניטי</h2>
-//                 <OwlCarousel
-//                     className="tab-carousel owl-carousel owl-rtl"
-//                     items={1}
-//                     loop
-//                     nav
-//                     dots={false}
-//                 >
-//                     {/* פריטי הקרוסלה נכנסים כאן */}
-//                     <div className="item"><img src="תמונה1.jpg" alt="תמונה ראשונה" /></div>
-//                     <div className="item"><img src="תמונה2.jpg" alt="תמונה שנייה" /></div>
-//                     <div className="item"><img src="תמונה3.jpg" alt="תמונה שלישית" /></div>
-//                 </OwlCarousel>
-//                 <OwlCarousel
-//                     className="owl-thumbs owl-carousel hidemobile owl-rtl"
-//                     items={3}
-//                 >
-//                     {/* פריטי התמונות הממוזערות נכנסים כאן */}
-//                     <div className="item"><img src="תמונה1.jpg" alt="תמונה ראשונה" /></div>
-//                     <div className="item"><img src="תמונה2.jpg" alt="תמונה שנייה" /></div>
-//                     <div className="item"><img src="תמונה3.jpg" alt="תמונה שלישית" /></div>
-//                 </OwlCarousel>
-//             </div>
-//         );
-//     }
-// }
 
-// export default Images;
+export default function Images() {
+  return (
+    <MDBCarousel showIndicators showControls fade>
+      <MDBCarouselItem itemId={1}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem itemId={2}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem itemId={3}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+    </MDBCarousel>
+  );
+}

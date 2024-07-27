@@ -18,6 +18,11 @@ function NavBar() {
                                     <span className="txt-container"> מה בסביבה</span>
                                 </a>
                             </li>
+                            <li className="moduleMenu" data-menu-module-id="65083ab45ac91">
+                                <a className="page-scroll" href="#section-65083ab45ac91">
+                                    <span className="txt-container"> לבדיקת זמינות</span>
+                                </a>
+                            </li>
                             <li className="moduleMenu" data-menu-module-id="64f0607fe361d">
                                 <a className="page-scroll" href="#section-64f0607fe361d">
                                     <span className="txt-container">גלריה</span>
@@ -25,7 +30,7 @@ function NavBar() {
                             </li>
                             <li id="centerLogo19">
                                 <a href="javascript:void(0);" className="s123-site-logo navbar-brand s123-w-l-s page-scroll">
-                                    צפון נעמי<span className="website-name website-name-preview-helper">ליצירת קשר</span>
+                                    <span className="website-name website-name-preview-helper">להזמנה ויצירת קשר</span>
                                 </a>
                             </li>
                             <li className="moduleMenu extra-nav-more dropdown-submenu">

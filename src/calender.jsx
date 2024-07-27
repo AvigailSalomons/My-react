@@ -3,7 +3,7 @@ import Calendar from "react-calendar";
 import "./App.css";
 import './calender.css';
 
-const App = () => {
+const Calandar = () => {
     const [selectedDate, setSelectedDate] = useState(null);
     const [eventName, setEventName] = useState("");
     const [events, setEvents] = useState([]);
@@ -73,7 +73,6 @@ const App = () => {
     return (
         
         <div className="app">
-            <h1>GeeksforGeeks Calendar Application</h1>
             <div className="container">
                 <div className="calendar-container">
                     <Calendar
@@ -179,4 +178,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Calandar;
