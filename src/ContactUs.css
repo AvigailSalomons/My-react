@@ -1,4 +1,4 @@
-/* .contact-us-container {
+.contact-us-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,4 +53,4 @@ textarea.form-control {
 
 .btn-submit:hover {
     background-color: #0056b3;
-} */
+}

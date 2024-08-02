@@ -1,0 +1,5 @@
+.carousel-image {
+    width: 100%;
+    max-width: 300px; /* Set a max width for images */
+    margin: 0 10px; /* Spacing between images */
+}
