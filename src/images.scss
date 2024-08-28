@@ -1,27 +1,32 @@
 // src/carousel.scss
-body{
-  background-color: rgba(0, 0, 0, 0.5); /* שחור עם 50% שקיפות */
+
+body {
+  // background-image: url('./images/2.jpeg');
+  // background-color: rgba(0, 0, 0, 0.5); /* שחור עם 50% שקיפות */
 }
+
 .inc_minisite .pop-wrapper button {
   outline: 0;
 }
-.d-block{
+
+.d-block {
   border-radius: 10px;
 }
-// src/carousel.scss
 
+// Variables
 $white: #ffffff; // Define white color
 $black: #000000; // Define black color
 $font-weight-bold: 700; // Define bold font weight
-
 $carousel-control-icon-font-size: 1.7rem;
 $prefix: ''; // Define prefix if needed, otherwise keep it empty
 
+// Root variables
 :root {
   --#{$prefix}carousel-control-icon-font-size: #{$carousel-control-icon-font-size};
   --#{$prefix}carousel-control-icon-font-weight: #{$font-weight-bold};
 }
 
+// Carousel control variables
 $carousel-control-color: $white;
 $carousel-control-width: 15%;
 $carousel-control-opacity: 0.5;
@@ -40,95 +45,30 @@ $carousel-caption-color: $white;
 $carousel-caption-padding-y: 1.25rem;
 $carousel-caption-spacer: 1.25rem;
 $carousel-control-icon-width: 2rem;
+
+// Carousel icon backgrounds
 $carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
 $carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
 $carousel-transition-duration: 0.6s;
-$carousel-control-prev-icon-bg: none;
-$carousel-control-next-icon-bg: none;
-$carousel-control-icon-font-size: 1.7rem;
 $carousel-transition: transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 $carousel-dark-indicator-active-bg: $black;
 $carousel-dark-caption-color: $black;
 $carousel-dark-control-icon-filter: invert(1) grayscale(100);
 
 // Additional styles for the carousel component can be added here
-
-inc_minisite .arrows .owl-next {
-  cursor: pointer;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  font-size: 0;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background: rgba(0, 0, 0, .3);
-  float: left;
-  border: 0;}
-$white: #ffffff; // Define white color
-$black: #000000; // Define black color
-$font-weight-bold: 700; // Define bold font weight
-
-$carousel-control-icon-font-size: 1.7rem;
-$prefix: ''; // Define prefix if needed, otherwise keep it empty
-
-:root {
-  --#{$prefix}carousel-control-icon-font-size: #{$carousel-control-icon-font-size};
-  --#{$prefix}carousel-control-icon-font-weight: #{$font-weight-bold};
-}
-
-$carousel-control-color: $white;
-$carousel-control-width: 15%;
-$carousel-control-opacity: 0.5;
-$carousel-control-hover-opacity: 0.9;
-$carousel-control-transition: opacity 0.15s ease;
-$carousel-indicator-width: 30px;
-$carousel-indicator-height: 3px;
-$carousel-indicator-hit-area-height: 10px;
-$carousel-indicator-spacer: 3px;
-$carousel-indicator-opacity: 0.5;
-$carousel-indicator-active-bg: $white;
-$carousel-indicator-active-opacity: 1;
-$carousel-indicator-transition: opacity 0.6s ease;
-$carousel-caption-width: 70%;
-$carousel-caption-color: $white;
-$carousel-caption-padding-y: 1.25rem;
-$carousel-caption-spacer: 1.25rem;
-$carousel-control-icon-width: 2rem;
-$carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='NavigateNextOutlinedIcon' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
-$carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
-$carousel-transition-duration: 0.6s;
-$carousel-control-prev-icon-bg: none;
-$carousel-control-next-icon-bg: none;
-$carousel-control-icon-font-size: 1.7rem;
-$carousel-transition: transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
-$carousel-dark-indicator-active-bg: $black;
-$carousel-dark-caption-color: $black;
-$carousel-dark-control-icon-filter: invert(1) grayscale(100);
-
-// Additional styles for the carousel component can be added here
-.carousel-control-prev-icon::after {
-  display: none;
-}
+.carousel-control-prev-icon::after,
 .carousel-control-next-icon::after {
-  display: none;
+  display: none; // Hide default icons
 }
 
 .carousel-container {
   display: flex; /* Use flexbox for layout */
-  align-items: center; /* Align items to the center */
   padding-top: 10%;
   padding-bottom: 10%;
-  justify-content: center;
 }
 
-.thumbnail-column {
-  display: flex;
-  flex-direction: column; /* Stack thumbnails vertically */
-  margin-right: 20px; /* Space between thumbnails and carousel */
-}
+
 
 .thumbnail {
   width: 120px; /* Set a fixed width for thumbnails */
@@ -143,59 +83,57 @@ $carousel-dark-control-icon-filter: invert(1) grayscale(100);
 }
 
 #carousel-all {
+  position: relative; /* Position relative to contain absolute children */
   display: flex;
-  justify-content: space-between;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 2vh;
-  margin-right: 2vh;
+   justify-content:start;
+  text-align: center;
+  // width: 100%;
+  // height: 100vh; /* Set height to 100% of the viewport height */
+  color: black;
+  white-space: pre-line; /* Preserve whitespace and line breaks */
+  font-size: 34px; /* Adjust font size as needed */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 8% 2vh; /* Margin top and bottom */
   max-height: 60vh; /* הגבלת גובה מקסימלי של הקרוסלה */
-  height: 100%; 
-  max-width: 200vh;
+  max-width: 120vh;
+}
+
+#carousel-all::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/2.jpeg');
+  background-size: cover; /* Ensure the background image covers the entire div */
+  background-position: center; /* Center the background image */
+  opacity: 0.5; /* Set the desired transparency */
+  z-index: -1; /* Ensure it is behind the text */
+}
+
+.carousel-container {
+ 
+margin-left: auto; /* מרווח אוטומטי משמאל */
+  margin-right: auto; /* מרווח אוטומטי מימין */
+  padding: 24px 10px;
+
+  display: flex; /* השתמש ב-Flexbox */
+  justify-content: center; /* מרכז את התמונה */
+  align-items: center; /* מרכז את התמונה גם במאוזן */
+
+  position: relative; /* לשמור על התמונה במקומה */
 }
 
 .img {
-  max-height: 60vh; /* הגבלת גובה מקסימלי של תמונות הקרוסלה */
-  height: 100%; 
-  width: auto;
-  object-fit: cover; 
-  display: block; /* וודא שהתמונה היא בלוק לצורך יישור */
-  margin-left: auto; /* מרווח אוטומטי משמאל */
-  margin-right: auto; /* מרווח אוטומטי מימין */
+ 
+  max-height: 80vh; /* הגבלת גובה מקסימלי של תמונות הקרוסלה */
+  height: 100%;
+  width: 100%; /* וודא שהתמונה תתפוס את כל הרוחב */
+ 
+  object-fit: cover; /* ודא שהתמונה ממלאה את התיבה שלה */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease; /* הוסף מעבר חלק */
 }
 
-
-
-#carousel-all {
-	position: relative; /* Position relative to contain absolute children */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	width: 100%;
-	height: 100vh; /* Set height to 100% of the viewport height */
-	color: black;
-	white-space: pre-line; /* Preserve whitespace and line breaks */
-	font-size: 34px; /* Adjust font size as needed */
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  #carousel-all::before {
-
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url('./images/2.jpeg');
-	background-size: cover; /* Ensure the background image covers the entire div */
-	background-position: center; /* Center the background image */
-	opacity: 0.5; /* Set the desired transparency */
-	z-index: -1; /* Ensure it is behind the text */
-  }
-
-  .carousel-container {
-	padding: 20px; /* Add padding to the content for spacing */
-	background: rgba(255, 255, 255, 0.5); /* Add a semi-transparent background to the text */
-	border-radius: 10px; /* Optional: Add rounded corners */
-  }

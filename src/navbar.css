@@ -1,20 +1,29 @@
 /* General body styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Assistant,sans-serif;
   margin: 0;
   padding: 0;
+  font-weight: 22px;
   
 }
+.website-name {
+	font-family: Assistant,sans-serif;
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: black; /* Black color for the text */
+  text-align: center; /* Center align the text */
+  font-weight: bold; /* Make the text bold */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
 
 /* Navbar styles */
 #mainNav {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  padding: 10px;
-  position: fixed; /* Keep the navbar fixed at the top */
 
+  background-color: #ffffff;
+  /* border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  font-size: 16px;
+   position: fixed; /* Keep the navbar fixed at the top */
   top: 0; /* Align it to the top of the viewport */
   left: 0; /* Align it to the left of the viewport */
   width: 100%; /* Full width */
@@ -27,6 +36,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  margin-bottom: 15vh;
 }
 
 #mainNav .navbar-header .navbar-brand {
@@ -41,8 +51,9 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
+ 
   flex-direction: row;
 }
 
@@ -55,58 +66,32 @@ body {
 #mainNav .navActions li a {
   color: #555;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   transition: color 0.3s;
 }
 
-#mainNav .navPages li a:hover,
-#mainNav .navActions li a:hover {
-  color: #007bff;
-}
 
-#mainNav .navPages li a .txt-container {
-  font-weight: bold;
-}
 
 #mainNav #centerLogo19 {
   flex: 1;
   text-align: center;
 }
 
-#mainNav .website-languages-menu-link {
-  color: #555;
-  background-color: #f0f0f0;
-  border-radius: 4px;
-  padding: 10px 15px;
-  transition: background-color 0.3s;
-}
-
 #mainNav .website-languages-menu-link:hover {
   background-color: #e0e0e0;
 }
 
-#mainNav .header-social-wrapper .actionButton,
-#mainNav .header-cart-wrapper .actionButton {
-  color: #555;
-  background-color: #f0f0f0;
-  border-radius: 50%;
-  padding: 10px;
-  transition: background-color 0.3s;
-}
+
 
 #mainNav .header-social-wrapper .actionButton:hover,
 #mainNav .header-cart-wrapper .actionButton:hover {
   background-color: #e0e0e0;
 }
 
-#mainNav .header-cart-wrapper .count {
-  background-color: #ff0000;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 12px;
-  padding: 2px 6px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(50%, -50%);
+
+.image-icone{
+  width: 40px;
+  height: 40px;
+  margin-right: 2px;
+  margin-left: 2px;
 }

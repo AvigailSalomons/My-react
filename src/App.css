@@ -12,14 +12,9 @@
 	  animation: App-logo-spin infinite 20s linear;
 	}
   }
-  body{
 
-	background-color: white;
-	/* background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center; */
-  }
   body::before {
+	/* background-color: rgba(0, 0, 0); */
 	content: "";
 	position: absolute;
 	top: 0;
@@ -27,17 +22,7 @@
 	width: 100%;
 	height: 100%;
 /* צבע שחור שקוף */
-	z-index: 1; /* כדי להבטיח שהשכבה תהיה מעל התמונה */
-  }
-  .App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+	z-index: -2; /* כדי להבטיח שהשכבה תהיה מעל התמונה */
   }
   
   .App-link {
@@ -81,12 +66,9 @@
   }
   body {
 	  font-family: 'Arial', sans-serif;
-	  background-color: rgba(0, 0, 0, 0.5); /* שחור עם 50% שקיפות */
 	  margin: 0;
 	  padding: 0;
-	  justify-content: center;
-	  align-items: center;
-	  height: 100vh;
+	 
   }
   .event-container {
 	  flex: 1;
@@ -116,7 +98,7 @@
 	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	  border-radius: 8px;
 	  padding: 10px;
-	  transition: background-color 0.2s;
+	
   }
   
   .react-calendar--doubleView {
@@ -282,7 +264,7 @@
 	  border-radius: 4px;
 	  font-size: 1rem;
 	  cursor: pointer;
-	  transition: background-color 0.2s;
+	
   }
   
   .create-btn:hover {
@@ -349,15 +331,6 @@
 	  background-color: #0056b3;
   }
   
-  .event-card-body {
-	  padding-bottom: 10px;
-  }
-  
-  .event-title {
-	  font-size: 1.5rem;
-	  color: #fd0000;
-  }
-  
   .selected {
 	  background-color: #ff4081 !important;
 	  color: white;
@@ -383,38 +356,62 @@
 	  max-width: 50%; /* מבטיח שכל קומפוננטה לא תתפוס יותר מ-50% מהרוחב */
 	  box-sizing: border-box; /* מבטיח שרוחב הקומפוננטה כולל את ה-padding וה-border */
   }
- 
-  #contaxt {
-	position: relative; /* Position relative to contain absolute children */
-	display: flex;
+  h1{
+	text-align: center;
+	/* height: 90vh; */
+	color: rgb(173, 216, 230);
+	white-space: pre-line;
+	font-weight: 22px bold; /* Preserve whitespace and line breaks */
+	font-size: 34px; /* Adjust font size as needed */
+	font-family: Assistant,sans-serif;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-	width: 100%;
-	height: 100vh; /* Set height to 100% of the viewport height */
-	color: black;
-	white-space: pre-line; /* Preserve whitespace and line breaks */
-	font-size: 34px; /* Adjust font size as needed */
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+ 
+ 
+#navbar{
+	height: 8vh;
+	/* max-height: 50px; */
+}
+#details-header{
+	font-family: var(--font_modules_header),'Rubik',Arial,sans-serif;
+	height: 150;
+	/* width: 50%; */
+	 font-size: 50px; 
+	color:rgb(173, 216, 230)
+}
+#icon-arrow{
+	width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the container */
+	color: rgb(173, 216, 230);;
+}
 
-  #contaxt::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url('./images/2.jpeg' );
-	
-	background-size: cover; /* Ensure the background image covers the entire div */
-	background-position: center; /* Center the background image */
-	opacity: 0.5; /* Set the desired transparency */
-	z-index: -1; /* Ensure it is behind the text */
-  }
+/*  */
 
-  .content {
-	
-	background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the text */
-	
-  }
+#details-header {
+	font-family: var(--font_modules_header), 'Rubik', Arial, sans-serif;
+	width: 50%;
+	font-size: 50px;
+	color: rgb(173, 216, 230);
+}
+
+.image {
+	display: flex;
+	align-items: center;
+}
+
+#icon-arrow {
+	width: 10px; /* קובע את רוחב החץ */
+	height: 10px; /* קובע את גובה החץ */
+	object-fit: cover; /* מבטיח שהתמונה תמלא את הקונטיינר */
+	color: rgb(173, 216, 230);
+}
+#body {
+	display: flex; /* הצבה אופקית של האלמנטים */
+	position: relative;
+	flex-direction: row; /* יישור האלמנטים בשורה */
+	justify-content: space-between; /* רווח בין האלמנטים */
+	align-items: flex-start; /* יישור האלמנטים לראש השורה */
+}
+

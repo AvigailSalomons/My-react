@@ -1,0 +1,29 @@
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60vh;
+    justify-content: space-around; /* Center items horizontally */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+      background: white;
+  border-radius: 8px;
+ 
+  transition: transform 0.1s ease; /* הוסף מעבר חלק */
+ 
+  }
+  
+  .detail-item {
+    display: flex;
+    /* align-items: start;  */
+    margin: 10px; /* Margin between items */
+    font-size: 1.2rem; /* Font size for text */
+  }
+  
+  .detail-icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5rem; /* Size of the icon */
+  }
+  .icon-image {
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
