@@ -5,16 +5,16 @@ import Chip from '@mui/material/Chip';
 // import Groups2SharpIcon from '@mui/icons-material/Groups2Sharp';
 import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import HotTubIcon from '@mui/icons-material/HotTub';
-import pool from './images/pool.png';
-import persons from './images/persons.png';
-import trampoline from './images/t.png';
-import room from './images/r.png';
-import bed from './images/b.png';
-import h from './images/h.png';
-import taabun from './images/taabun.png';
-import parkink from './images/p.png';
-import grass from './images/g.png';
-import sizufBed from './images/bs.png';
+import pool from './../../images/pool.png';
+// import persons from './images/persons.png';
+import trampoline from './../../images/t.png';
+ import room from './../../images/r.png';
+import bed from './../../images/b.png';
+import h from './../..//images/h.png';
+import taabun from './../../images/taabun.png';
+import parkink from './../../images/p.png';
+import grass from './../../images/g.png';
+import sizufBed from './../../images/bs.png';
 
 
 

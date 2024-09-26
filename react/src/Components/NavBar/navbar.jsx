@@ -1,10 +1,10 @@
 import React from 'react';
 import './navbar.css';
-import persons from './images/persons.png';
-import gallry from './images/interface_13492152.png';
-import location from './images/location_535239.png';
-import contact from './images/contact-mail_3095583.png';
-import calendar from './images/calendar_2693507.png';
+import persons from './../../images/persons.png';
+import gallry from './../../images/interface_13492152.png';
+import location from './../../images/location_535239.png';
+import contact from './../../images/contact-mail_3095583.png';
+import calendar from './../../images/calendar_2693507.png';
 
 
 

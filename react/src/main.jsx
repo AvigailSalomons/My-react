@@ -1,48 +1,44 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import { createBrowserRouter } from 'react-router-dom'
-import { RouterProvider } from 'react-router-dom'
-import User from './Commponents/user/User'
-import Admin from './Commponents/admin/Admin'
-import ServiceArr from './Commponents/serviceArr/ServiceArr'
-import Meeting from './Commponents/meeting/Meeting'
-import ContactUs from './ContactUs'
-import Calander from './calander'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { createBrowserRouter } from 'react-router-dom';
+import { RouterProvider } from 'react-router-dom';
 
+// ייבוא קומפוננטות
+import Admin from './Components/admin/Admin';
+import ContactUs from './Components/ContactUs';
+import Calander from './Components/calander/Calander';
+import App from './Components/App';
 
-
+// הגדרת הנתיבים
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App/>,
-    errorElement: <div>error contants</div>
-
+    element: <App />,
+    errorElement: <div>Page not found</div>,
   },
   {
-    path: '/ContactUs',
-    element: <Calander/>,
-    errorElement: <div>error contants</div>,
+    path: '/contact-us', // שם הנתיב מתוקן לכתיבה נכונה
+    element: <ContactUs />, // הצגת ContactUs בקומפוננטה זו
     children: [
-      {
-        path: '',
-        element: <div></div>,
-      },
      
-      {
-        path: 'meeting',
-        element: <Meeting/>,
-        errorElement: <h3>Error!!!!!  the page meeting not found!!!!</h3>
-        
-      }
-    ]
-  }
-],)
+    ],
+  },
+  {
+    path: '/calendar',
+    element: <Calander />,
+    errorElement: <div>Error loading calendar</div>,
+  },
+  {
+    path: '/admin',
+    element: <Admin />,
+    errorElement: <div>Admin page not found</div>,
+  },
+]);
 
-
-
+// רינדור האפליקציה
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-       <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);

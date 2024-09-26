@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import CalenderUser from './calenderUser';
+import CalenderUser from '../calenderUser';
 import './App.css';
-import Calender from './calender'; // הייבוא של קובץ ה-JSX של הקלנדר
-import Customers from './customers'; // הייבוא של קובץ ה-JSX של הקלנדר
+import Calender from './Calendar/calender'; // הייבוא של קובץ ה-JSX של הקלנדר
+import Customers from './Customers/customers'; // הייבוא של קובץ ה-JSX של הקלנדר
 
-import Admin from './admin';
-import NavBar from './navbar';
+// import Admin from './admin';
+import NavBar from './NavBar/navbar';
 // import Gallery from './gallrey';
-import Images from './images';
-import Details from './details';
-import SuiteInfinity from './SuiteInfinity';
-import Email, { ContactUs } from './ContactUs';
-import About from './about';
+import Images from './Image/images';
+import Details from './Details/details';
+// import Email, { ContactUs } from './ContactUs/ContactUs';
+// import About from './About/about';
 // import './styles.scss'
-import FullImages from './fullImages'
-import arrow from './images/arrow_5185200.png';
+// import FullImages from './fullImages'
+// import arrow from './images/arrow_5185200.png';
 
 
 function App() {
