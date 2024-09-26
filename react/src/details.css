@@ -1,0 +1,28 @@
+.details-container {
+  display: flex;
+  flex-wrap: wrap;
+width: 60vh;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail-item {
+  direction: rtl;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  width: 33.33%; /* 33.33% * 3 = 100%, יוצר 3 עמודות שוות */
+margin-left: 0px;
+margin-right: 0px;
+
+  font-family: Assistant, sans-serif;
+}
+
+
+
+.icon-image {
+  width: 5vh; /* Set the desired width */
+  height: 5vh; /* Set the desired height */
+  object-fit: cover; /* Ensure the image covers the container */
+}

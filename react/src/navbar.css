@@ -1,0 +1,97 @@
+/* General body styles */
+body {
+  font-family: Assistant,sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 22px;
+  
+}
+.website-name {
+	font-family: Assistant,sans-serif;
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: black; /* Black color for the text */
+  text-align: center; /* Center align the text */
+  font-weight: bold; /* Make the text bold */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+
+/* Navbar styles */
+#mainNav {
+
+  background-color: #ffffff;
+  /* border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  font-size: 16px;
+   position: fixed; /* Keep the navbar fixed at the top */
+  top: 0; /* Align it to the top of the viewport */
+  left: 0; /* Align it to the left of the viewport */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it's above other elements */
+
+}
+
+#mainNav .site_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* margin-bottom: 15vh; */
+}
+
+#mainNav .navbar-header .navbar-brand {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#mainNav .navPages,
+#mainNav .navActions {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  /* margin: 0;
+  padding: 0; */
+ 
+  flex-direction: row;
+}
+
+#mainNav .navPages li,
+#mainNav .navActions li {
+  margin-left: 20px;
+}
+
+#mainNav .navPages li a,
+#mainNav .navActions li a {
+  color: #555;
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+
+
+#mainNav #centerLogo19 {
+  flex: 1;
+  text-align: center;
+}
+
+#mainNav .website-languages-menu-link:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+#mainNav .header-social-wrapper .actionButton:hover,
+#mainNav .header-cart-wrapper .actionButton:hover {
+  background-color: #e0e0e0;
+}
+
+
+.image-icone{
+  width: 40px;
+  height: 40px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
